@@ -16,7 +16,7 @@ $ npm install --global npm-user-packages-cli
 $ npm-user-packages --help
 
   Usage
-    $ npm-user-packages kevva
+    $ npm-user-packages <username>
 ```
 
 
