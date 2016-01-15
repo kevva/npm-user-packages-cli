@@ -2,11 +2,9 @@ import execa from 'execa';
 import test from 'ava';
 
 test('show help screen', async t => {
-	const ret = await execa('./cli.js', ['--help']);
-	t.regexTest(/Get packages by a npm user/, ret.stdout);
+	t.regexTest(/Get packages by a npm user/, (await execa('./cli.js', ['--help'])).stdout);
 });
 
 test('get packages', async t => {
-	const ret = await execa('./cli.js', ['kevva']);
-	t.regexTest(/npm-user-packages/, ret.stdout);
+	t.regexTest(/npm-user-packages/, (await execa('./cli.js', ['kevva'])).stdout);
 });
