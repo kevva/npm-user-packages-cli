@@ -5,7 +5,7 @@
   "license": "MIT",
   "repository": "kevva/npm-user-packages-cli",
   "author": {
-    "name": "Kevin Martensson",
+    "name": "Kevin Mårtensson",
     "email": "kevinmartensson@gmail.com",
     "url": "github.com/kevva"
   },
@@ -32,11 +32,11 @@
   "dependencies": {
     "chalk": "^1.1.1",
     "meow": "^3.6.0",
-    "npm-user-packages": "^1.0.0"
+    "npm-user-packages": "^2.0.0"
   },
   "devDependencies": {
     "ava": "*",
-    "execa": "^0.2.1",
+    "execa": "^0.4.0",
     "xo": "*"
   }
 }

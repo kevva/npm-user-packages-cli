@@ -27,4 +27,4 @@ $ npm-user-packages --help
 
 ## License
 
-MIT © [Kevin Martensson](http://github.com/kevva)
+MIT © [Kevin Mårtensson](https://github.com/kevva)
