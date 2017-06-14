@@ -23,6 +23,8 @@ $ npm-user-packages --help
 ## Related
 
 * [npm-user-packages](https://github.com/kevva/npm-user-packages) - API for this module
+* [npm-user-cli](https://github.com/sindresorhus/npm-user-cli) - Get user info of an npm user
+* [npm-email-cli](https://github.com/sindresorhus/npm-email-cli) - Get the email of an npm user
 
 
 ## License
