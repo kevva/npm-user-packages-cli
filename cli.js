@@ -16,6 +16,6 @@ if (cli.input.length === 0) {
 
 npmUserPackages(cli.input[0]).then(data => {
 	for (const x of data) {
-		console.log(`${x.name} ${chalk.dim(x.homepage)}`);
+		console.log(`${x.name} ${chalk.dim(x.version)}`);
 	}
 });
