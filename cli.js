@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 'use strict';
+const alphaSort = require('alpha-sort');
 const chalk = require('chalk');
 const meow = require('meow');
+const normalizeUrl = require('normalize-url');
 const npmUserPackages = require('npm-user-packages');
 
 const cli = meow(`
@@ -15,7 +17,10 @@ if (cli.input.length === 0) {
 }
 
 npmUserPackages(cli.input[0]).then(data => {
-	for (const x of data) {
-		console.log(`${x.name} ${chalk.dim(x.homepage)}`);
+	const packages = data.sort((a, b) => alphaSort.asc(a.name, b.name));
+
+	for (const x of packages) {
+		const url = x.links.homepage;
+		console.log(`${x.name} ${url ? chalk.dim(normalizeUrl(url)) : ''}`);
 	}
 });
